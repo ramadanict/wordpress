@@ -1,0 +1,18 @@
+{
+	"google": {
+		"status": "active",
+		"response_code": "200",
+		"message": "Failed reasons",
+		"scope": {
+			"drive": "approved",
+			"spreadsheet": "unapproved",
+			"analytics": "pending"
+		},
+		"access_token": "",
+		"expires_in": 1800,
+		"refresh_token": "",
+		"token_updated_utc": ""
+	},
+	"slack": {},
+	"hubspot": {}
+}

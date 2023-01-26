@@ -1,0 +1,38 @@
+{
+	"permissions": [],
+
+	"filters": [
+		{
+			"conditions": [
+				{
+					"operand_1": {
+						"id": "column_8",
+						"value": "",
+						"data_type": "number",
+						"object_type": "table_column"
+					},
+					"operand_2": {
+						"id": "",
+						"value": 1980,
+						"object_type": "custom"
+					},
+					"operator": ">"
+				},
+				{
+					"operand_1": {
+						"id": "column_7",
+						"value": "",
+						"data_type": "date",
+						"object_type": "table_column"
+					},
+					"operand_2": {
+						"id": "",
+						"value": "2015-12-01 21:24:09",
+						"object_type": "custom"
+					},
+					"operator": "<"
+				}
+			]
+		}
+	]
+}

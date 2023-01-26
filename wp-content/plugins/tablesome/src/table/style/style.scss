@@ -1,0 +1,184 @@
+@import "./variables.scss";
+@import "./table.scss";
+@import "./controls.scss";
+@import "./options.scss";
+@import "./display.scss";
+@import "./spinner";
+
+:root {
+	--tablesome-pro-color: #4a5d6a;
+}
+
+.tablesome__container .tablesome-header__wrapper {
+	display: flex;
+	margin: 10px 55px;
+	padding-top: 10px;
+	justify-content: flex-end;
+
+	.tablesome-search {
+		display: flex;
+		label {
+			display: flex;
+			position: relative;
+		}
+
+		&__icon {
+			color: #777;
+			display: inline-flex;
+			align-items: center;
+			position: absolute;
+			padding-left: 15px;
+			height: 40px;
+			font-size: 25px;
+		}
+
+		input[type="search"].tablesome-search__input {
+			// Divi builder Fix
+			width: 250px;
+			padding-left: 28px;
+			margin-left: 10px;
+			height: 40px;
+			box-sizing: border-box;
+			border: 1px solid #ddd;
+			border-radius: 0px;
+			font-size: 16px;
+			outline: none;
+		}
+	}
+
+	.tablesome-filter,
+	.tablesome-export {
+		&__button {
+			height: 40px;
+			display: flex;
+			color: #777;
+			font-size: 14px;
+			cursor: pointer;
+			margin-left: 10px;
+			padding: 0px 15px;
+			position: relative;
+			border-radius: 0px;
+			align-items: center;
+			justify-content: center;
+			background-color: #efefef;
+			border: 1px solid #ddd;
+			box-sizing: border-box;
+			user-select: none;
+
+			&__active,
+			&:active {
+				border-radius: 0px;
+				outline: none;
+				color: #555;
+			}
+		}
+		&__icon {
+			margin-right: 5px;
+		}
+	}
+
+	.filter__value--month {
+		text-transform: capitalize;
+	}
+
+	.tablesome__premium--text {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #f1ac2e;
+		font-weight: 600;
+		text-decoration: none;
+		padding: 0 10px;
+		text-transform: uppercase;
+		span {
+			color: #f1ac2e !important;
+		}
+	}
+
+	.tablesome-filter,
+	.tablesome-export,
+	.tablesome-search {
+		height: 40px;
+		margin-bottom: 10px;
+	}
+
+	.filter__button--picker {
+		height: 100%;
+		width: 147px;
+		box-shadow: inset 0 0 0 1px #ddd;
+		background-color: transparent;
+		color: #007cba;
+	}
+
+	.filter__button--picker + span {
+		margin: 0px;
+	}
+
+	@media only screen and (max-width: $mobile) {
+		display: block;
+		position: relative;
+		margin: 0;
+
+		.tablesome-filter,
+		.tablesome-search,
+		.tablesome-export,
+		.filter__button--picker,
+		.tablesome__premium--text {
+			margin-bottom: 10px;
+			&__button {
+				margin-left: 0px;
+			}
+		}
+
+		.filter__button--picker {
+			height: 40px;
+			display: flex;
+			width: 100%;
+			justify-content: start;
+		}
+
+		.tablesome-search {
+			flex-direction: column;
+			&__icon {
+				padding-left: 10px;
+			}
+			input[type="search"].tablesome-search__input {
+				width: 100%;
+				padding-left: 40px;
+				margin: 0px;
+			}
+		}
+	}
+}
+
+div#tablesome__container.tablesome__container--read-only
+	.tablesome-header__wrapper {
+	margin: 10px 0 0 0;
+}
+
+// TailwindCSS
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.tablesome__button--submit {
+	@apply tablesome-bg-blue-500 hover:tablesome-bg-blue-600 tablesome-text-white tablesome-font-bold tablesome-py-3 tablesome-px-5 tablesome-rounded tablesome-border-none tablesome-no-underline;
+}
+.tablesome__button--submit:disabled {
+	@apply tablesome-bg-blue-400 tablesome-text-white;
+}
+
+.tablesome__button--action {
+	@apply tablesome-inline-flex tablesome-items-center tablesome-rounded-md tablesome-whitespace-nowrap tablesome-bg-white tablesome-py-2 tablesome-px-3 tablesome-text-xs tablesome-font-semibold tablesome-uppercase tablesome-text-blue-500 focus:tablesome-ring tablesome-no-underline hover:tablesome-bg-blue-500 hover:tablesome-text-white tablesome-ml-2;
+
+	span {
+		margin-left: 5px;
+	}
+}
+
+.tablesome__button--cell {
+	@apply tablesome-px-4 tablesome-py-2 tablesome-rounded  tablesome-border-none;
+}
+.tablesome__button--cell:hover {
+	opacity: 0.8;
+}

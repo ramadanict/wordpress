@@ -1,0 +1,105 @@
+{
+	"filters": [
+		{
+			"conditions": [
+				{
+					"operand_1": {
+						"id": "post_type",
+						"value": "",
+						"data_type": "string",
+						"object_type": "post_type"
+					},
+					"operand_2": {
+						"id": "",
+						"value": "post",
+						"object_type": "custom"
+					},
+					"operator": "is"
+				},
+				{
+					"operand_1": {
+						"id": "post_status",
+						"value": "",
+						"data_type": "string",
+						"object_type": "post_status"
+					},
+					"operand_2": {
+						"value": "publish",
+						"object_type": "custom"
+					},
+					"operator": "=="
+				},
+				{
+					"operand_1": {
+						"id": "post_title",
+						"value": "",
+						"data_type": "array",
+						"object_type": "post"
+					},
+					"operand_2": {
+						"value": "shoe"
+					},
+					"operator": "contains"
+				},
+				{
+					"operand_1": {
+						"id": "post_author",
+						"data_type": "array",
+						"object_type": "post"
+					},
+					"operand_2": {
+						"id": "",
+						"value": [0],
+						"object_type": "custom"
+					},
+					"operator": "contains"
+				},
+				{
+					"operand_1": {
+						"id": "taxonomies",
+						"value": "",
+						"data_type": "array",
+						"object_type": "taxonomies",
+						"meta": [
+							{
+								"id": "taxonomies_values",
+								"value": ["category"],
+								"data_type": "array"
+							}
+						]
+					},
+					"operand_2": {
+						"id": "",
+						"value": [54, 45],
+						"object_type": "custom"
+					},
+					"operator": "is"
+				},
+				{
+					"operand_1": {
+						"id": "post_meta",
+						"value": "",
+						"data_type": "string",
+						"object_type": "post_meta",
+						"meta": [
+							{
+								"id": "meta_key",
+								"value": "click_counter",
+								"data_type": "string"
+							}
+						]
+					},
+					"operand_2": {
+						"id": "",
+						"value": "5",
+						"object_type": "custom"
+					},
+					"operator": "is"
+				}
+			],
+			"group_operator": "AND",
+			"group_id": 1,
+			"parent": "none"
+		}
+	]
+}

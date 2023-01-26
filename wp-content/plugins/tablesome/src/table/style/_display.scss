@@ -1,0 +1,148 @@
+div#tablesome__container.tablesome__container.tablesome__container--read-only {
+	// div#tablesome__container.tablesome__container{
+
+	// search, filter: show/hide on breakpoint
+	.tablesome-header__wrapper {
+		.tablesome-search.tablesome-search__lg--show,
+		.tablesome-filter.tablesome-filter__lg--show,
+		.tablesome-export.tablesome-export__lg--show {
+			display: block;
+		}
+
+		.tablesome-search.tablesome-search__lg--hidden,
+		.tablesome-filter.tablesome-filter__lg--hidden,
+		.tablesome-export.tablesome-export__lg--hidden {
+			display: none;
+		}
+
+		// mobile
+		@media only screen and (max-width: $mobile) {
+			.tablesome-search.tablesome-search__sm--show,
+			.tablesome-filter.tablesome-filter__sm--show,
+			.tablesome-export.tablesome-export__sm--show {
+				display: block;
+			}
+
+			.tablesome-search.tablesome-search__sm--hidden,
+			.tablesome-filter.tablesome-filter__sm--hidden,
+			.tablesome-export.tablesome-export__sm--hidden {
+				display: none;
+			}
+		}
+	}
+
+	// hideTableHeader
+	.tablesome__table--wrapper .tablesome__table {
+		.tablesome__thead.tablesome-thead--show {
+			display: table-header-group;
+		}
+
+		.tablesome__thead.tablesome-thead--hidden {
+			display: none;
+		}
+	}
+
+	// Display Mode: standard
+	table.tablesome__table.standard {
+		width: auto;
+	}
+	table.tablesome__table.maximum-content {
+		width: max-content;
+	}
+
+	// Column Width
+	.tablesome__table.minWidth .tablesome__column,
+	.tablesome__table.minWidth .tablesome__cell {
+		min-width: var(--columnMinWidth);
+	}
+	.tablesome__table.maxWidth .tablesome__column,
+	.tablesome__table.maxWidth .tablesome__cell {
+		max-width: var(--columnMaxWidth);
+	}
+
+	//Mobile Layout: stack-mode
+	@media only screen and (max-width: $mobile) {
+		.tablesome__table.maxWidth.stack-mode .tablesome__column,
+		.tablesome__table.maxWidth.stack-mode .tablesome__cell {
+			max-width: none;
+		}
+
+		.tablesome__table.stack-mode {
+			table-layout: fixed;
+			width: 100%;
+			border: 0;
+			background: none;
+			display: flex;
+			flex-direction: column;
+
+			thead.tablesome__thead {
+				border: none;
+				clip: rect(0 0 0 0);
+				height: 1px;
+				margin: -1px;
+				overflow: hidden;
+				padding: 0;
+				position: absolute;
+				width: 1px;
+			}
+
+			tr.tablesome__row {
+				display: block;
+				margin-bottom: 0.625em;
+				// margin-bottom: 20px;
+				// background: white;
+			}
+
+			td.tablesome__cell {
+				display: block;
+				font-size: 0.8em;
+				text-align: right !important; // override theme's style for blocks
+				height: auto;
+				min-height: 16px;
+
+				&:nth-child(even):not(:last-child) {
+					border-bottom: none !important; // solve double border thickness in mobile
+				}
+
+				&:nth-child(even) {
+					border-top: none !important; // solve double border thickness in mobile
+				}
+			}
+
+			td.tablesome__cell::before {
+				content: attr(data-label);
+				float: left;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-align: left;
+			}
+		}
+	}
+
+	/* Sticky First Column */
+
+	// Fix for border-style collapsing for sticky column
+	// Reference: (https://stackoverflow.com/questions/50361698/border-style-do-not-work-with-sticky-position-element)
+	.tablesome__table.stickyFirstColumn {
+		border-collapse: separate !important; /* Don't collapse */
+	}
+
+	.tablesome__table.stickyFirstColumn
+		.tablesome__row
+		.tablesome__column:nth-child(1),
+	.tablesome__table.stickyFirstColumn
+		.tablesome__row
+		.tablesome__cell:nth-child(1) {
+		position: -webkit-sticky;
+		position: sticky;
+		// background: hsl(180, 50%, 70%);
+		left: -6px; // to hide left gap
+		z-index: 5;
+	}
+
+	.tablesome__table.stickyFirstColumn
+		.tablesome__row
+		.tablesome__column:nth-child(1) {
+		z-index: 10;
+	}
+}

@@ -1,0 +1,146 @@
+{
+	"status": 1,
+	"action_id": 9,
+	"action-data-version": 2,
+	"filters": [
+		{
+			"conditions": [
+				{
+					"operand_1": {
+						"id": "",
+						"value": "",
+						"data_type": "",
+						"object_type": "table_column",
+						"meta": []
+					},
+					"operand_2": {
+						"id": "",
+						"value": "",
+						"data_type": "",
+						"object_type": "custom",
+						"meta": []
+					},
+					"operator": ""
+				}
+			],
+			"group_operator": "AND",
+			"group_id": 1,
+			"parent": "none"
+		},
+		{
+			"conditions": [
+				{
+					"operand_1": {
+						"id": "author_id",
+						"value": "",
+						"data_type": "string",
+						"object_type": "table_column",
+						"meta": []
+					},
+					"operand_2": {
+						"id": "",
+						"value": "current_user",
+						"object_type": "custom",
+						"meta": []
+					},
+					"operator": "is"
+				},
+				{
+					"operand_1": {
+						"id": "created_at",
+						"value": "",
+						"data_type": "date",
+						"object_type": "table_column",
+						"meta": []
+					},
+					"operand_2": {
+						"id": "",
+						"value": "last_30_days",
+						"object_type": "custom",
+						"meta": []
+					},
+					"operator": "is"
+				},
+				{
+					"operand_1": {
+						"id": "table_column_id",
+						"value": "",
+						"data_type": "date",
+						"object_type": "table_column",
+						"meta": []
+					},
+					"operand_2": {
+						"id": "",
+						"value": "exact_date",
+						"object_type": "custom",
+						"meta": [
+							{
+								"id": "exact_date",
+								"value": "js_timestamp_value",
+								"data_type": "date"
+							}
+						]
+					},
+					"operator": "is"
+				},
+
+				{
+					"operand_1": {
+						"id": "table_column_id",
+						"value": "",
+						"data_type": "date",
+						"object_type": "table_column",
+						"meta": []
+					},
+					"operand_2": {
+						"id": "",
+						"value": "between",
+						"object_type": "custom",
+						"meta": [
+							{
+								"id": "between",
+								"from_date": "js_timestamp_value",
+								"to_date": "js_timestamp_value"
+							}
+						]
+					},
+					"operator": "is"
+				}
+			],
+			"group_operator": "AND",
+			"group_id": 2,
+			"parent": "none"
+		},
+		{
+			"conditions": []
+		}
+	],
+
+	"data_types_for_table_column_formats": {
+		"string": ["text", "textarea", "email", "file"],
+		"date": "date",
+		"number": "number",
+		"json": ["url", "button"]
+	},
+	"not_supported_column_formats": ["url", "button"],
+	"first_operand_display_select_options": {
+		"table_columns": ["list of available table columns"],
+		"table_hidden_columns": [
+			{
+				"id": "created_by",
+				"label": "Current User",
+				"data_type": "number"
+			},
+			{
+				"id": "created_at",
+				"label": "Created At",
+				"data_type": "date"
+			},
+			{
+				"id": "updated_at",
+				"label": "Updated At (Later)",
+				"data_type": "date"
+			}
+		]
+	}
+}

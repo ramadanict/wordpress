@@ -1,0 +1,74 @@
+$spinner-color: #33333333;
+$loader-color: #007cba;
+
+.tablesome__spinner,
+.tablesome__spinner > .tablesome__loader {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+.tablesome__spinner {
+	border: 3px solid $spinner-color;
+	position: relative;
+	margin: 15px 10px;
+	display: none;
+
+	&.active {
+		display: block;
+	}
+
+	& .tablesome__loader {
+		position: absolute;
+		top: -3px;
+		left: -3px;
+		border: 3px solid $loader-color;
+		border-right-color: rgba(0, 0, 0, 0);
+		border-top-color: rgba(0, 0, 0, 0);
+		-webkit-animation: tablesome_spinner 1s linear infinite;
+		-moz-animation: tablesome_spinner 1s linear infinite;
+		-ms-animation: tablesome_spinner 1s linear infinite;
+		-o-animation: tablesome_spinner 1s linear infinite;
+		animation: tablesome_spinner 1s linear infinite;
+	}
+}
+
+@-webkit-keyframes tablesome_spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes tablesome_spinner {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-o-keyframes tablesome_spinner {
+	0% {
+		-o-transform: rotate(0deg);
+	}
+	100% {
+		-o-transform: rotate(360deg);
+	}
+}
+@-ms-keyframes spitablesome_spinner {
+	0% {
+		-ms-transform: rotate(0deg);
+	}
+	100% {
+		-ms-transform: rotate(360deg);
+	}
+}
+@keyframes tablesome_spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

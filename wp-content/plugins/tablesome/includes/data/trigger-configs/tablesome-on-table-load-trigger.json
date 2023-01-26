@@ -1,0 +1,12 @@
+{
+	"integration": "tablesome",
+	"integration_label": "Tablesome",
+	"trigger": "tablesome_on_table_load",
+	"trigger_id": 5,
+	"trigger_label": "On Table Load",
+	"trigger_type": "on_table_load",
+	"is_active": true,
+	"is_premium": "yes",
+	"supported_actions": [8, 9],
+	"unsupported_actions": []
+}

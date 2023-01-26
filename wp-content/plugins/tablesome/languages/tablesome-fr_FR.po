@@ -1,0 +1,288 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tablesome\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-17 11:45+0000\n"
+"PO-Revision-Date: 2021-06-17 14:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: Français\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7.2"
+
+msgid "Add a Filter"
+msgstr "Ajouter un filtre"
+
+msgid "Add New"
+msgstr "Ajouter un nouveau"
+
+msgid "Add Tablesome Shortcode"
+msgstr "Ajouter un shortcode tablesome"
+
+#| msgid "Are you sure want's to Delete the selected Column ?"
+msgid "Are you sure want's to Delete the selected Column?"
+msgstr "Voulez-vous vraiment supprimer la colonne sélectionnée ?"
+
+#. Notices or Messages
+#| msgid "Are you sure want's to Delete the selected Row ?"
+msgid "Are you sure want's to Delete the selected Row?"
+msgstr "Voulez-vous vraiment supprimer la ligne sélectionnée ?"
+
+msgid "As of now, it supports only XLSX and CSV format."
+msgstr "Pour l'instant, il ne prend en charge que les formats XLSX et CSV."
+
+msgid ""
+"As of now, it would load only up to 10,000 records. We are working to load "
+"more records and will be added soon."
+msgstr ""
+"Pour l'instant, il ne chargerait que jusqu'à 10000 enregistrements. Nous "
+"travaillons pour charger plus d'enregistrements et seront ajoutés bientôt."
+
+msgid "Basic"
+msgstr "De base"
+
+msgid "Cell Border Width and Color"
+msgstr "Largeur et couleur de la bordure de cellule"
+
+msgid "Cell Typography"
+msgstr "Typographie cellulaire"
+
+#. Table Defaults like placeholder and title.
+msgid "Column name"
+msgstr "Nom de colonne"
+
+msgid "Column name..."
+msgstr "Nom de colonne..."
+
+#, fuzzy
+#| msgid ""
+#| "Copy and Paste this shortcode in any page or post to display this Table"
+msgid "Copy and paste this shortcode in any page or post to display this Table"
+msgstr ""
+"Copiez et collez ce shortcode dans n'importe quelle page ou publication pour "
+"afficher ce tableau"
+
+msgid "Copy Shortcode"
+msgstr "Copier le code court"
+
+msgid "Copy Shortcode Clipboard"
+msgstr "Copier le presse-papiers du shortcode"
+
+#| msgid "Couldn't remove the Column. Table must have one Column atleast!"
+msgid "Couldn't remove the Column. The table must have one Column at least!"
+msgstr ""
+"Impossible de supprimer la colonne. La table doit avoir au moins une colonne "
+"!"
+
+#| msgid "Couldn't remove the row. Table must have one row atleast!"
+msgid "Couldn't remove the row. The table must have one row at least!"
+msgstr ""
+"Impossible de supprimer la ligne. Le tableau doit avoir au moins une ligne !"
+
+#. CPT Page.
+msgid "Create New Table"
+msgstr "Créer un nouveau tableau"
+
+msgid "Delete"
+msgstr "Effacer"
+
+msgid "Disable Style"
+msgstr "Désactiver le style"
+
+msgid "Duplicate"
+msgstr "Dupliquer"
+
+msgid "Edit Table"
+msgstr "Modifier le tableau"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Enter the Tablesome Table ID"
+msgstr "Entrez l'ID de la table Tablesome"
+
+msgid "Exclude Columns"
+msgstr "Exclure des colonnes"
+
+msgid "File"
+msgstr "Déposer"
+
+msgid "FILTER"
+msgstr "FILTRE"
+
+msgid "Filters"
+msgstr "Filtres"
+
+#. Pagination
+msgid "First"
+msgstr "D'abord"
+
+#. Column Format Types
+msgid "Format Type"
+msgstr "Type de format"
+
+msgid "General"
+msgstr "Général"
+
+msgid "Header background"
+msgstr "Arrière-plan de l'en-tête"
+
+msgid "Header Border Width and Color"
+msgstr "Largeur et couleur de la bordure de l'en-tête"
+
+msgid "Header Typography"
+msgstr "Typographie d'en-tête"
+
+msgid "Image"
+msgstr "Image"
+
+msgid "Import"
+msgstr "Importer"
+
+msgid "Import Table"
+msgstr "Tableau d'importation"
+
+msgid "Importing the Data"
+msgstr "Importation des données"
+
+msgid "Insert left"
+msgstr "Insérer à gauche"
+
+msgid "Insert Right"
+msgstr "Insérer à droite"
+
+msgid "Last"
+msgstr "Durer"
+
+msgid "Layout Options"
+msgstr "Options de mise en page"
+
+msgid "Load Data"
+msgstr "Charger les données"
+
+msgid "load default table styles from theme"
+msgstr "charger le style de table par défaut à partir du thème"
+
+msgid "Min Column Width"
+msgstr "Largeur de colonne minimale"
+
+msgid "Mobile Layout"
+msgstr "Mise en page mobile"
+
+msgid "Next"
+msgstr "Suivant"
+
+msgid "Notes"
+msgstr "Remarques"
+
+msgid "Number"
+msgstr "Nombre"
+
+msgid "Number Of Records per Page"
+msgstr "Nombre d'enregistrements par page"
+
+msgid "Please enter the tablesome table id"
+msgstr "Veuillez saisir l'identifiant du tableau"
+
+msgid "Previous"
+msgstr "Précédent"
+
+msgid "Row background"
+msgstr "Arrière-plan de la ligne"
+
+msgid "Row background for alternate rows"
+msgstr "Arrière-plan de ligne pour les lignes alternatives"
+
+msgid "Save Table"
+msgstr "Enregistrer le tableau"
+
+msgid "Search"
+msgstr "Rechercher"
+
+msgid "Select an table exclude columns"
+msgstr "Sélectionnez une table à exclure des colonnes"
+
+#. Shortcode
+msgid "Shortcode"
+msgstr "Petit code"
+
+msgid "Shortcode Copied!"
+msgstr "Shortcode copié !"
+
+#. Column Options
+msgid "Sort Ascending"
+msgstr "Trier par ordre croissant"
+
+msgid "Sort Descending"
+msgstr "Trier par ordre décroissant"
+
+msgid "Sorting"
+msgstr "Tri"
+
+#. Settings -- Style Section
+msgid "Style"
+msgstr "Style"
+
+msgid "Table Header Styles"
+msgstr "Style d'en-tête de tableau"
+
+msgid "Table Name"
+msgstr "Nom de la table"
+
+msgid "Table Row and Cell Styles"
+msgstr "Styles de ligne et de cellule du tableau"
+
+msgid "Table Settings"
+msgstr "Paramètres du tableau"
+
+#. Settings -- General Section
+msgid "Tablesome Settings"
+msgstr "Paramètres du Tablesome"
+
+#, fuzzy
+#| msgid "Take the first row as column header of the table"
+msgid "Take the first row as the column header of the table"
+msgstr "Prendre la première ligne comme en-tête de colonne du tableau"
+
+msgid "Text"
+msgstr "Texte"
+
+msgid "Text Area"
+msgstr "Zone de texte"
+
+#, fuzzy
+#| msgid "This will affect frontend only"
+msgid "This will affect the front end only"
+msgstr "Cela n'affectera que le front-end"
+
+msgid "Title"
+msgstr "Titre"
+
+msgid "Type to filter ..."
+msgstr "Tapez pour filtrer..."
+
+#. Search
+msgid "Type to Search ..."
+msgstr "Tapez pour rechercher ..."
+
+msgid "Unable to create a post."
+msgstr "Impossible de créer un message."
+
+msgid "Update Table"
+msgstr "Tableau de mise à jour"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Value should be 1 at least"
+msgstr "La valeur doit être au moins égale à 1"
+
+msgid "Value should be 100 or below"
+msgstr "La valeur doit être de 100 ou moins"
+
+msgid "Value should between 1-100"
+msgstr "La valeur doit être comprise entre 1 et 100"

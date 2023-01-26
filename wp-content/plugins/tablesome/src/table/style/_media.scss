@@ -1,0 +1,118 @@
+.tablesome {
+	&__cell.image_cell {
+		text-align: center;
+	}
+	&__media__options,
+	&__url__options {
+		white-space: normal;
+		.tablesome__option.row:hover {
+			background-color: #fff;
+		}
+		.media,
+		.url {
+			&__url,
+			&__text,
+			&__link {
+				width: 100%;
+				border: 1px solid #efefef;
+			}
+			&__button {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				padding: 5px;
+				border: 1px solid #efefef;
+
+				&--add {
+					color: #000;
+					background: #fff;
+				}
+
+				&--update {
+					background: #157dec;
+					color: #fff;
+				}
+
+				&--remove {
+					background: #ff5151;
+					color: #fff;
+				}
+
+				&--hide {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__inputMedia {
+		flex-direction: column;
+		&--active {
+			display: flex;
+		}
+
+		&--inactive {
+			display: none;
+		}
+	}
+
+	&__inputMediaPreview {
+		display: flex;
+		justify-content: center;
+
+		&--active {
+			display: inline;
+		}
+		&--inactive {
+			display: none;
+		}
+
+		&--video {
+			height: 150px;
+			width: 200px;
+		}
+		&--audio {
+			width: 200px;
+		}
+		&--image {
+			max-width: none !important; // override theme's css property for image inside content (.entry-content img)
+			// max-height: 150px;
+			width: 200px;
+			object-fit: cover;
+		}
+		&--link {
+			display: inline-flex;
+		}
+	}
+
+	&__inputMedia--button {
+		font-weight: 500;
+		cursor: pointer;
+		// position: absolute;
+		background: #fffc;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		border: none;
+		&:focus {
+			border-radius: 5px;
+			border: 2px solid #007cba;
+			outline-color: #007cba;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.tablesome {
+		&__inputMediaPreview {
+			&--image {
+				// max-height: 100px;
+				width: 150px;
+				object-fit: cover;
+			}
+		}
+	}
+}

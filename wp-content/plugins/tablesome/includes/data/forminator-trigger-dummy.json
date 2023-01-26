@@ -1,0 +1,113 @@
+{
+	"trigger_meta": {
+		"integration": "forminator",
+		"status": 1,
+		"trigger_id": 4,
+		"form_id": 80,
+		"actions": [
+			{
+				"integration": "tablesome",
+				"action_id": 1,
+				"autodetect_enabled": "",
+				"matchcolumns_enabled": "",
+				"match_columns": [
+					{
+						"column_id": 1,
+						"column_status": "published",
+						"field_name": "name-1",
+						"field_type": "trigger_source",
+						"detection_mode": "auto"
+					},
+					{
+						"column_id": 2,
+						"column_status": "published",
+						"field_name": "email-1",
+						"field_type": "trigger_source",
+						"detection_mode": "auto"
+					},
+					{
+						"column_id": 3,
+						"column_status": "published",
+						"field_name": "phone-1",
+						"field_type": "trigger_source",
+						"detection_mode": "auto"
+					},
+					{
+						"column_id": 4,
+						"column_status": "published",
+						"field_name": "textarea-1",
+						"field_type": "trigger_source",
+						"detection_mode": "auto"
+					},
+					{
+						"column_id": 0,
+						"column_status": "pending",
+						"field_name": "created_at",
+						"field_type": "tablesome_smart_fields",
+						"detection_mode": "enabled"
+					},
+					{
+						"column_id": 0,
+						"column_status": "pending",
+						"field_name": "page_source_url",
+						"field_type": "tablesome_smart_fields",
+						"detection_mode": "disabled"
+					}
+				]
+			},
+			{
+				"integration": "wordpress",
+				"action_id": 6,
+				"custom_url_enabled": "",
+				"post_type": "page",
+				"post_id": 1,
+				"enable_all_url_params": 1,
+				"url_params": [
+					{
+						"field_id": "name-1",
+						"field_alias": "name",
+						"field_status": 1
+					},
+					{
+						"field_id": "email-1",
+						"field_alias": "email",
+						"field_status": 1
+					}
+				]
+			}
+		]
+	},
+	"table_id": 23,
+	"trigger_position": 0,
+	"trigger_data": {
+		"integration": "forminator",
+		"form_title": "Simple Contact Form",
+		"form_id": 145,
+		"data": {
+			"name-1": {
+				"label": "Name",
+				"value": "John Constantine",
+				"type": "name",
+				"unix_timestamp": null
+			},
+			"email-1": {
+				"label": "Email Address",
+				"value": "johnconstantine@gmail.com",
+				"type": "email",
+				"unix_timestamp": null
+			},
+			"phone-1": {
+				"label": "Phone No",
+				"value": "1234567890",
+				"type": "number",
+				"unix_timestamp": null
+			},
+			"textarea-1": {
+				"label": "Message",
+				"value": "Some Message here",
+				"type": "textarea",
+				"unix_timestamp": null
+			}
+		}
+	}
+}

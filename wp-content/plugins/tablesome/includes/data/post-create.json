@@ -1,0 +1,58 @@
+{
+	"status": 1,
+	"action_id": 4,
+	"map_fields": [
+		{
+			"source": {
+				"id": "title",
+				"object_type": "trigger",
+				"label": "Title of Post",
+				"value": ""
+			},
+			"destination": {
+				"id": "post_title",
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "post"
+			}
+		},
+		{
+			"source": {
+				"id": "product_category",
+				"object_type": "trigger",
+				"label": "Product Category",
+				"value": ""
+			},
+			"destination": {
+				"id": "taxonomy",
+				"object_type": "post_type",
+				"label": "Product Category",
+				"meta": [
+					{
+						"id": "term",
+						"object_type": "taxonomy",
+						"label": "Term",
+						"update_options": {
+							"onEvent": "parent_change"
+						}
+					}
+				]
+			}
+		},
+		{
+			"source": {
+				"id": "userId",
+				"object_type": "trigger_smart_fields",
+				"label": "UserID",
+				"value": ""
+			},
+			"destination": {
+				"id": "post_author",
+				"object_type": "post",
+				"label": "Post Author"
+			}
+		}
+	],
+	"filters": []
+}

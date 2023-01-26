@@ -1,0 +1,182 @@
+{
+	"status": 1,
+	"action_id": 8,
+	"action-data-version": 2,
+	"map_fields": [
+		{
+			"source_field": {
+				"id": "",
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "post"
+			},
+			"destination_field": {
+				"id": "",
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "custom"
+			}
+		},
+		{
+			"source_field": {
+				"id": "post_featured_image",
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "post"
+			},
+			"destination_field": {
+				"id": "",
+				"label": "Post Featured Image",
+				"value": "",
+				"data_type": "",
+				"object_type": "custom"
+			}
+		},
+		{
+			"source_field": {
+				"id": "post_title",
+				"label": "",
+				"value": "",
+				"data_type": "string",
+				"object_type": "post"
+			},
+			"destination_field": {
+				"id": "",
+				"label": "Title of Post",
+				"value": "",
+				"data_type": "",
+				"object_type": "custom"
+			}
+		},
+		{
+			"source_field": {
+				"id": "post_date",
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "post"
+			},
+			"destination_field": {
+				"id": "",
+				"label": "Post Date",
+				"value": "",
+				"data_type": "",
+				"object_type": "custom"
+			}
+		},
+		{
+			"source_field": {
+				"id": "post_status",
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "post"
+			},
+			"destination_field": {
+				"id": "",
+				"label": "Post Status",
+				"value": "",
+				"data_type": "",
+				"object_type": "custom"
+			}
+		},
+		{
+			"source_field": {
+				"id": "post_author",
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "post"
+			},
+			"destination_field": {
+				"id": "",
+				"label": "Post Author",
+				"value": "",
+				"data_type": "",
+				"object_type": "custom"
+			}
+		},
+		{
+			"source_field": {
+				"id": "click_counter",
+				"label": "",
+				"value": "",
+				"object_type": "post_meta"
+			},
+			"destination_field": {
+				"id": "",
+				"label": "Click Counter",
+				"object_type": "custom",
+				"value": ""
+			}
+		},
+		{
+			"source_field": {
+				"id": "category",
+				"label": "",
+				"value": "",
+				"object_type": "taxonomies"
+			},
+			"destination_field": {
+				"name": "",
+				"label": "Categories",
+				"type": "custom",
+				"value": ""
+			}
+		},
+		{
+			"source_field": {
+				"id": "post_tag",
+				"label": "",
+				"value": "",
+				"object_type": "taxonomies"
+			},
+			"destination_field": {
+				"name": "",
+				"label": "Post Tags",
+				"type": "custom",
+				"value": ""
+			}
+		}
+	],
+	"filters": [
+		{
+			"conditions": [
+				{
+					"operand_1": {
+						"id": "",
+						"value": "",
+						"data_type": "",
+						"object_type": "",
+						"meta": []
+					},
+					"operand_2": {
+						"id": "",
+						"value": "",
+						"object_type": "custom"
+					},
+					"operator": "is"
+				}
+			],
+			"group_operator": "AND",
+			"group_id": 1,
+			"parent": "none"
+		},
+		{
+			"conditions": []
+		}
+	],
+	"data_types": {
+		"post_title": "string",
+		"post_content": "string",
+		"post_author": "number",
+		"post_type": "array",
+		"taxonomy": "string",
+		"post_meta": "number",
+		"post_created_date": "datetime",
+		"post_modified_date": "datetime"
+	}
+}

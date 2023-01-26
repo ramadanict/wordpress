@@ -1,0 +1,17 @@
+$primary: #fbfbfb;
+$secondary: rgba(34, 36, 38, 0.1);
+$textColor: rgba(0, 0, 0, 0.87);
+$white: #fff; // Table Background
+
+// Old not used
+$activeColor: #ffdc87;
+$borderColor: #dcd7ca;
+
+// breakpoints
+$mobile: 640px;
+
+:root {
+	--columnWidth: auto;
+	--columnMinWidth: auto;
+	--columnMaxWidth: auto;
+}

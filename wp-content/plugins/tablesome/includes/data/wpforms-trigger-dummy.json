@@ -1,0 +1,93 @@
+{
+	"trigger_meta": {
+		"integration": "wpforms",
+		"status": 1,
+		"trigger_id": 2,
+		"form_id": 72,
+		"actions": [
+			{
+				"integration": "mailchimp",
+				"action_id": 2,
+				"match_fields": [
+					{
+						"type_name": "email_address",
+						"field_name": 1
+					}
+				],
+				"conditions": [
+					{
+						"field": 0,
+						"operator": "equal_to",
+						"value": "Paul"
+					}
+				]
+			},
+			{
+				"integration": "tablesome",
+				"action_id": 1,
+				"autodetect_enabled": "",
+				"matchcolumns_enabled": "",
+				"match_columns": [
+					{
+						"field_name": 0,
+						"column_id": 1,
+						"detection_mode": "manual"
+					},
+					{
+						"field_name": 1,
+						"column_id": 2,
+						"detection_mode": "manual"
+					}
+				]
+			}
+		]
+	},
+	"action_position": 1,
+	"action_meta": [
+		{
+			"integration": "tablesome",
+			"action_id": 1,
+			"autodetect_enabled": "",
+			"matchcolumns_enabled": "",
+			"match_columns": [
+				{
+					"field_name": 0,
+					"column_id": 1,
+					"detection_mode": "manual"
+				},
+				{
+					"field_name": 1,
+					"column_id": 2,
+					"detection_mode": "manual"
+				}
+			]
+		}
+	],
+	"table_id": 84,
+	"trigger_position": 0,
+	"trigger_data": {
+		"integration": "wpforms",
+		"form_title": "Simple Contact Form",
+		"form_id": 72,
+		"data": {
+			"1": {
+				"label": "Name",
+				"value": "John Constantine",
+				"type": "name",
+				"unix_timestamp": null
+			},
+			"2": {
+				"label": "Email",
+				"value": "johnconstantine@gmail.com",
+				"type": "email",
+				"unix_timestamp": null
+			},
+			"3": {
+				"label": "Comment or Message",
+				"value": "Some Message here",
+				"type": "textarea",
+				"unix_timestamp": null
+			}
+		}
+	}
+}

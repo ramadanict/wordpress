@@ -1,0 +1,53 @@
+.tablesome {
+	&__rowControl,
+	&__columnControl {
+		z-index: 10;
+		position: absolute;
+		display: none;
+		align-items: center;
+		justify-content: center;
+		user-select: none;
+	}
+
+	&__rowControl {
+		// bottom: 54px;
+		display: block;
+		justify-content: center;
+		align-items: center;
+		position: initial;
+		padding: 5px;
+
+		> span {
+			flex: 1 1 auto;
+			margin: 5px;
+		}
+		& .tablesome__icon {
+			margin-left: 6px;
+		}
+
+		// .tablesome__modal--open {
+		// 	color: #f1ac2e !important;
+		// }
+	}
+
+	&__columnControl {
+		top: 14px;
+		right: 50px;
+		& .tablesome__icon {
+			margin-right: 10px;
+		}
+	}
+
+	&__icon {
+		// padding: 2.5px;
+		border-radius: 2px;
+		display: inline-block;
+		border: 2px solid $secondary;
+		text-align: center;
+		// width: 12px;
+		&:hover {
+			box-shadow: 0 0 0 2px $secondary;
+			cursor: pointer;
+		}
+	}
+}

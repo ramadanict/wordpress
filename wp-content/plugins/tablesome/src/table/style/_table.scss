@@ -1,0 +1,329 @@
+@import "./media";
+@import "./pagination";
+
+// Admin Side only
+body.wp-admin .tablesome {
+	&__table {
+		display: block;
+	}
+
+	&__container {
+		background-color: $white;
+	}
+
+	&__column,
+	&__cell {
+		max-width: 400px;
+		min-width: 150px;
+	}
+}
+// .tablesome__table.table-layout-mode--block .tablesome {
+//   &__column,
+//   &__cell {
+//     max-width: 400px;
+//     min-width: 150px;
+//   }
+// }
+
+div#tablesome__container div.tablesome__table--wrapper {
+	margin: 0 0 1.5em;
+	overflow-y: auto;
+}
+
+div#tablesome__container table.tablesome__table {
+	width: 100%;
+	margin: 0px;
+
+	/* Sorting */
+	.tablesome__column.tablesome-column__sorting {
+		position: relative;
+		cursor: pointer;
+		outline: none;
+	}
+	.tablesome__column.tablesome-column__sorting:after {
+		font-family: dashicons;
+		content: "\f140";
+		font-size: medium;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: auto;
+		right: 6px;
+		margin: auto;
+		height: 14px;
+		line-height: 1;
+	}
+
+	// .tablesome-column__sorting:hover{
+	// 	background-color: #049cdb;
+	// }
+}
+
+div#tablesome__container
+	table.tablesome__table:not(.tablesome__table--read-only) {
+	min-height: 500px;
+	margin-bottom: 20px;
+	// padding: 40px 0px 0px;
+
+	// .tablesome__row--active,
+	.tablesome__cell--active,
+	.tablesome__column--active {
+		background-color: #eee;
+	}
+
+	.tablesome__cell {
+		position: relative; // Odd row td bg and border style not applied firefox fix
+	}
+}
+
+div#tablesome__container:not(.tablesome__container--read-only) {
+	.tablesome-pagination {
+		// margin: 0 55px 0;
+		padding: 0 0 40px;
+	}
+	div.tablesome__table--wrapper {
+		margin: 0px 55px 40px 0px;
+	}
+}
+
+.tablesome {
+	&__container {
+		width: 100%;
+		position: relative;
+	}
+
+	&__table {
+		border-collapse: collapse;
+		border: none;
+		border-spacing: 0;
+		empty-cells: show;
+		font-size: 14px;
+		line-height: 1.4285em;
+		color: $textColor;
+		table-layout: auto;
+		// background-color: white;
+
+		// overflow-x: auto;
+		// margin: 0 0 1.5em;
+
+		// &--nowrap {
+		// 	& .tablesome__column,
+		// 	& .tablesome__cell {
+		// 		white-space: nowrap;
+		// 	}
+		// }
+	}
+
+	&__row {
+		border: none;
+		font-size: inherit;
+		line-height: inherit;
+		margin: 0;
+		padding: 0;
+		display: table-row;
+		text-align: inherit;
+		transition: all 0.3s ease;
+	}
+
+	&__column,
+	&__cell {
+		overflow-wrap: break-word;
+	}
+
+	&__column,
+	&__cell,
+	&__cell:first-child,
+	&__column:first-child {
+		border: 1px solid #cfd3da;
+		margin: 0;
+		overflow: visible;
+		box-sizing: content-box;
+		padding: 17px 13px;
+		transition: all 0.3s ease;
+		text-overflow: ellipsis;
+		font-weight: 400;
+		height: 20px;
+		line-height: 1.5;
+		text-align: left;
+		vertical-align: middle;
+		word-break: normal;
+		background-clip: padding-box;
+	}
+
+	&__column,
+	&__column:first-child {
+		cursor: pointer;
+		user-select: none;
+		font-weight: 600;
+		outline: none;
+		// white-space: nowrap;
+		vertical-align: middle;
+		// padding-right: 20px; // more spacing for sorting column
+
+		&__icon--add {
+			cursor: pointer;
+		}
+
+		.tablesome__input--text[type="text"] {
+			color: #444;
+			font-weight: 600;
+			border: 1px solid #ddd;
+			border-radius: 0;
+			width: 100%;
+		}
+	}
+
+	&__row--placeholder {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		visibility: visible;
+		background-color: #edf2f7;
+		border: 3px dashed #cbd5e0;
+		margin: 0;
+	}
+
+	&__input--cell {
+		display: none;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		top: 0;
+		left: 0;
+		margin: 0;
+	}
+
+	&__cell {
+		// position: relative; // Odd row td bg and border style not applied firefox fix
+		white-space: pre-wrap;
+		&--edit {
+			position: relative;
+			// padding: 0px;
+
+			.tablesome__quilljs-editor {
+				margin: -17px -13px;
+			}
+		}
+
+		.tablesome__input--text,
+		.tablesome__input--textarea,
+		.tablesome__input--url,
+		.tablesome__input--number {
+			text-align: left;
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+
+		a {
+			color: inherit;
+			background-color: inherit;
+		}
+
+		&--dragged {
+			background-color: white;
+		}
+
+		&--number {
+			text-align: right;
+		}
+	}
+
+	&__cell:not(.tablesome__cell--edit) {
+		.ql-editor {
+			overflow-y: visible;
+			padding: 0px;
+			font-family: inherit;
+			color: inherit;
+			font-style: inherit;
+			text-align: inherit;
+			text-transform: inherit;
+			font-size: inherit;
+			line-height: inherit;
+			letter-spacing: inherit;
+			height: auto;
+			img {
+				max-width: 100%;
+			}
+
+			a {
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__emptyMessage {
+		text-align: center;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 1;
+	}
+
+	&__column--add {
+		height: 50px;
+		width: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__datepicker {
+		.components-datetime__time {
+			padding-bottom: 8px;
+			fieldset:nth-child(2) {
+				display: none;
+			}
+		}
+
+		.components-datetime__calendar-help {
+			width: max-content;
+		}
+
+		select {
+			padding: 0 24px 0 8px;
+		}
+		small {
+			font-size: small;
+		}
+	}
+
+	&__notice--shortcuts {
+		// color: #007cba;
+		background-color: white;
+		padding: 0.5px 10px;
+		border-left: 5px solid #007cba;
+
+		&__title {
+			font-weight: 600;
+			margin-top: 7px;
+		}
+	}
+
+	&__premiumText {
+		// margin-left: 3px !important;
+		// color: #ffffff !important;
+		// background-color: #f1ac2e !important;
+		// font-size: 8px !important;
+		// font-weight: 600 !important;
+		// letter-spacing: 0.5px !important;
+		// padding: 3px !important;
+
+		margin-left: 3px !important;
+		color: #ffffff !important;
+		background-color: var(--tablesome-pro-color) !important;
+		font-size: 8px !important;
+		font-weight: 600 !important;
+		letter-spacing: 0.9px !important;
+		padding: 3px 5px !important;
+		border-radius: 4px;
+		// font-family: "Roboto";
+
+		&--invert {
+			background-color: #ffffff !important;
+			color: var(--tablesome-pro-color) !important;
+		}
+	}
+}

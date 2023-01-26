@@ -1,0 +1,134 @@
+{
+	"string": [
+		{ "id": "contains", "label": "Contains" },
+		{ "id": "does_not_contain", "label": "Does not contains" },
+		{ "id": "is", "label": "Is" },
+		{ "id": "is_not", "label": "Is not" },
+		{ "id": "starts_with", "label": "Starts with" },
+		{ "id": "ends_with", "label": "Ends with" },
+		{ "id": "empty", "label": "Is empty" },
+		{ "id": "not_empty", "label": "Is not empty" }
+	],
+	"number": [
+		{ "id": "=", "label": "Equal to" },
+		{ "id": "!=", "label": "Not equal to" },
+		{ "id": "<", "label": "Less than" },
+		{ "id": ">", "label": "Greater than" },
+		{ "id": "<=", "label": "Less than or equal to" },
+		{ "id": ">=", "label": "Greater than or equal to" },
+		{ "id": "empty", "label": "Is empty" },
+		{ "id": "not_empty", "label": "Is not empty" }
+	],
+	"array": [
+		{ "id": "contains", "label": "Contains" },
+		{ "id": "does_not_contain", "label": "Does not contains" },
+		{ "id": "is", "label": "Is" },
+		{ "id": "is_not", "label": "Is not" },
+		{ "id": "empty", "label": "Is empty" },
+		{ "id": "not_empty", "label": "Is not empty" }
+	],
+	"date": [
+		{ "id": "=", "label": "Is" },
+		{ "id": "!=", "label": "Is not" },
+		{ "id": "<", "label": "Is before" },
+		{ "id": ">", "label": "Is after" },
+		{ "id": "<=", "label": "Is on or before" },
+		{ "id": ">=", "label": "Is on or after" },
+		{ "id": "empty", "label": "Is empty" },
+		{ "id": "not_empty", "label": "Is not empty" }
+	],
+	"absoluteContextuals": [
+		{
+			"id": "today",
+			"label": "Today"
+		},
+		{
+			"id": "tomorrow",
+			"label": "Tomorrow"
+		},
+		{
+			"id": "yesterday",
+			"label": "Yesterday"
+		},
+		{
+			"id": "last_seven_days",
+			"label": "Last 7 days"
+		},
+		{
+			"id": "last_thirty_days",
+			"label": "Last 30 days"
+		},
+		{
+			"id": "current_month",
+			"label": "Current Month"
+		},
+		{
+			"id": "current_year",
+			"label": "Current Year"
+		}
+	],
+	"relativeContextuals": [
+		{
+			"id": "month",
+			"label": "Month"
+		},
+		{
+			"id": "year",
+			"label": "Year"
+		},
+		{
+			"id": "exact_date",
+			"label": "Exact date"
+		}
+	],
+	"months": [
+		{
+			"id": "1",
+			"label": "January"
+		},
+		{
+			"id": "2",
+			"label": "February"
+		},
+		{
+			"id": "3",
+			"label": "March"
+		},
+		{
+			"id": "4",
+			"label": "April"
+		},
+		{
+			"id": "5",
+			"label": "May"
+		},
+		{
+			"id": "6",
+			"label": "June"
+		},
+		{
+			"id": "7",
+			"label": "July"
+		},
+		{
+			"id": "8",
+			"label": "August"
+		},
+		{
+			"id": "9",
+			"label": "September"
+		},
+		{
+			"id": "10",
+			"label": "October"
+		},
+		{
+			"id": "11",
+			"label": "November"
+		},
+		{
+			"id": "12",
+			"label": "December"
+		}
+	]
+}

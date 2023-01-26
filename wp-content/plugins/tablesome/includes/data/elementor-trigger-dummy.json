@@ -1,0 +1,79 @@
+{
+	"trigger_meta": {
+		"integration": "elementor",
+		"status": 1,
+		"trigger_id": 3,
+		"form_id": "c168160",
+		"actions": [
+			{
+				"status": 1,
+				"integration": "mailchimp",
+				"action_id": 2,
+				"list_id": "31ec533e0a",
+				"match_fields": [
+					{
+						"field_name": "email",
+						"field_type": "email_address"
+					},
+					{
+						"field_name": "name",
+						"field_type": "FNAME"
+					}
+				]
+			},
+			{
+				"integration": "wordpress",
+				"action_id": 6,
+				"custom_url_enabled": "",
+				"post_type": "page",
+				"post_id": 1,
+				"enable_all_url_params": 1,
+				"url_params": [
+					{
+						"field_id": "email",
+						"field_alias": "user_name",
+						"field_status": 1
+					},
+					{
+						"field_id": "name",
+						"field_alias": "user_email",
+						"field_status": 1
+					}
+				]
+			}
+		]
+	},
+	"table_id": 15,
+	"trigger_position": 0,
+	"trigger_data": {
+		"integration": "elementor",
+		"form_title": "Simple Contact Form",
+		"form_id": 145,
+		"data": {
+			"user-name": {
+				"label": "user-name",
+				"value": "John Constantine",
+				"type": "name",
+				"unix_timestamp": null
+			},
+			"user-email": {
+				"label": "user-email",
+				"value": "johnconstantine@gmail.com",
+				"type": "email",
+				"unix_timestamp": null
+			},
+			"subject": {
+				"label": "subject",
+				"value": "Some Message here",
+				"type": "textarea",
+				"unix_timestamp": null
+			},
+			"message": {
+				"label": "message",
+				"value": "Some Message here",
+				"type": "textarea",
+				"unix_timestamp": null
+			}
+		}
+	}
+}

@@ -1,0 +1,114 @@
+{
+	"status": 1,
+	"action_id": 10,
+	"spreadsheet_id": "1g1zuc8o6E2PzQa2rkik0FS6bbOORK_TaYpmQ9C6Yp2A",
+	"sheet_id": "1g1zuc8o",
+	"action-data-version": 2,
+	"map_fields": [
+		{
+			"source_field": {
+				"id": "first_name",
+				"label": "",
+				"value": "",
+				"data_type": "string",
+				"object_type": "trigger_source",
+				"meta": []
+			},
+			"destination_field": {
+				"id": "0", // Index of the column
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "gsheet",
+				"meta": []
+			}
+		},
+		{
+			"source_field": {
+				"id": "last_name",
+				"label": "",
+				"value": "",
+				"data_type": "string",
+				"object_type": "trigger_source",
+				"meta": []
+			},
+			"destination_field": {
+				"id": "1",
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "gsheet",
+				"meta": []
+			}
+		},
+		{
+			"source_field": {
+				"id": "email",
+				"label": "",
+				"value": "",
+				"data_type": "string",
+				"object_type": "trigger_source",
+				"meta": []
+			},
+			"destination_field": {
+				"id": "2",
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "gsheet",
+				"meta": []
+			}
+		}
+	],
+	"range": {
+		"starting_column": "A",
+		"ending_column": "A",
+		"starting_row": 1,
+		"ending_row": 1
+	},
+	"dummy_data": {
+		"sheet_name": "Sheet3",
+		"map_fields": [
+			{
+				"source_value": "Sam 22211 ",
+				"target_value": "0"
+			},
+			{
+				"source_value": "sam@email.com",
+				"target_value": "1"
+			},
+			{
+				"source_value": "Sam Subject Nw",
+				"target_value": "2"
+			},
+			{
+				"source_value": "Message",
+				"target_value": "3"
+			},
+			{
+				"source_value": "12Message",
+				"target_value": "4"
+			},
+			{
+				"source_value": "1122Message",
+				"target_value": "5"
+			},
+			{
+				"source_value": "112122Message",
+				"target_value": "6"
+			},
+			{
+				"source_value": "112122Message",
+				"target_value": "7"
+			}
+		]
+	},
+	"log": {
+		"response_code": "",
+		"response_message": "",
+		"token_updated_utc": "",
+		"is_access_token_expired": "",
+		"refresh_token": "",
+		"retry_again": ""
+	}
+}

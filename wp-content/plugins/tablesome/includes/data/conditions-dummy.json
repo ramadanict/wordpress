@@ -1,0 +1,139 @@
+{
+	"groups": [
+		{
+			"conditions": [
+				{
+					"operand_1": {
+						"id": "post_type",
+						"value": "",
+						"data_type": "string",
+						"object_type": "post_type",
+						"meta": []
+					},
+
+					"operand_2": {
+						"id": "",
+						"value": "posts",
+						"object_type": "custom"
+					},
+					"operator": "is"
+				},
+				{
+					"operand_1": {
+						"id": "taxonomies",
+						"value": "",
+						"data_type": "array",
+						"object_type": "taxonomies",
+						"meta": [
+							{
+								"id": "taxonomies_values",
+								"value": ["category"],
+								"data_type": "array"
+							}
+						]
+					},
+					"operand_2": {
+						"id": "",
+						"value": [54, 45],
+						"object_type": "custom"
+					},
+					"operator": "is"
+				},
+				{
+					"operand_1": {
+						"id": "post_meta",
+						"value": "",
+						"data_type": "string",
+						"object_type": "post_meta",
+						"meta": [
+							{
+								"id": "meta_key",
+								"value": "click_counter",
+								"data_type": "string"
+							}
+						]
+					},
+					"operand_2": {
+						"id": "",
+						"value": "5",
+						"object_type": "custom"
+					},
+					"operator": "is"
+				},
+				{
+					"operand_1": {
+						"id": "post_author",
+						"value": "",
+						"data_type": "array",
+						"object_type": "post",
+						"meta": []
+					},
+					"operand_2": {
+						"id": "",
+						"value": [20],
+						"object_type": "custom"
+					},
+					"operator": "is"
+				},
+				{
+					"operand_1": {
+						"id": "post_status",
+						"value": "",
+						"data_type": "string",
+						"object_type": "post",
+						"meta": []
+					},
+					"operand_2": {
+						"id": "",
+						"value": "pubish",
+						"object_type": "custom"
+					},
+					"operator": "is"
+				},
+				{
+					"operand_1": {
+						"id": "post_title",
+						"value": "",
+						"data_type": "string",
+						"object_type": "post",
+						"meta": []
+					},
+					"operand_2": {
+						"id": "",
+						"value": "Lether",
+						"object_type": "custom"
+					},
+					"operator": "contains"
+				}
+			],
+			"group_operator": "AND",
+			"group_id": 1,
+			"parent": "none"
+		},
+		{
+			"conditions": [
+				{
+					"linked_group_id": 12
+				},
+				{
+					"operand_1": {
+						"id": "post_status",
+						"value": "",
+						"data_type": "string",
+						"object_type": "post",
+						"meta": []
+					},
+					"operand_2": {
+						"id": "",
+						"value": "pubish",
+						"object_type": "custom"
+					},
+					"operator": "is"
+				}
+			],
+			"group_operator": "XOR",
+			"group_id": 13,
+			"parent": "none"
+		}
+	]
+}

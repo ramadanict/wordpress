@@ -1,0 +1,62 @@
+{
+	"status": 1,
+	"action_id": 10,
+	"action-data-version": 2,
+	"list_id": 1,
+	"map_fields": [
+		{
+			"source_field": {
+				"id": "",
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "trigger_source",
+				"meta": []
+			},
+			"destination_field": {
+				"id": "",
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "contact",
+				"meta": []
+			}
+		},
+		{
+			"source_field": {
+				"id": "form_email",
+				"label": "",
+				"value": "",
+				"data_type": "email",
+				"object_type": "trigger_source",
+				"meta": []
+			},
+			"destination_field": {
+				"id": "email",
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "contact",
+				"meta": []
+			}
+		},
+		{
+			"source_field": {
+				"id": "page_source_url",
+				"label": "",
+				"value": "",
+				"data_type": "string",
+				"object_type": "trigger_smart_fields",
+				"meta": []
+			},
+			"destination_field": {
+				"id": "website",
+				"label": "",
+				"value": "",
+				"data_type": "",
+				"object_type": "contact",
+				"meta": []
+			}
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"status": 1,
+	"action_id": 10,
+	"channel_id": "C04BQV80JC9",
+	"user_id": "XXXXX",
+	"message": {
+		"content": "This is a test message for the Slack integration."
+	}
+}

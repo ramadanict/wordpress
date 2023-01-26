@@ -1,0 +1,20 @@
+{
+	"integration": "cf7",
+	"integration_label": "Contact Form 7",
+	"trigger": "tablesome_cf7_form_submit",
+	"trigger_id": 1,
+	"trigger_label": "On Form Submit",
+	"trigger_type": "forms",
+	"is_active": true,
+	"is_premium": "no",
+	"hooks": [
+		{
+			"priority": 10,
+			"accepted_args": 1,
+			"name": "wpcf7_before_send_mail",
+			"callback_name": "trigger_callback"
+		}
+	],
+	"supported_actions": [],
+	"unsupported_actions": [8, 9]
+}

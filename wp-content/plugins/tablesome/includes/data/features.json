@@ -1,0 +1,12 @@
+{
+	"tablesomDB": false,
+	"date": true,
+	"date_filter": true,
+	"filtered_views": false,
+	"triggers_and_actions": true,
+	"ontableload_action": true,
+	"filter_table_action": false,
+	"slack_action": false,
+	"hubspot_action": false,
+	"gsheet_action": false
+}

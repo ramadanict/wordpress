@@ -1,0 +1,42 @@
+{
+	"update_table": {
+		"records_updated": [
+			{
+				"stateRecordID": 1,
+				"record_id": 1,
+				"content": [
+					{
+						"type": "text",
+						"html": "St James",
+						"value": "St James",
+						"column_id": 2
+					},
+					{
+						"type": "url",
+						"html": "<a class=\"tablesome__url\" href=\"//qw.com\" target=\"_blank\">qw.com</a>",
+						"value": "qw.com",
+						"column_id": 3
+					},
+					{
+						"type": "file",
+						"html": "<a href=\"http://tablesomewp.local/wp-content/uploads/2022/11/pennant-1.jpg\" class=\"tablesome__inputMediaPreview--link\" target=\"_blank\"><img  class=\"tablesome__inputMediaPreview tablesome__inputMediaPreview--image\" src=\"http://tablesomewp.local/wp-content/uploads/2022/11/pennant-1.jpg\" /></a>",
+						"value": 261,
+						"column_id": 5,
+						"attachment": {
+							"url": "http://tablesomewp.local/wp-content/uploads/2022/11/pennant-1.jpg"
+						}
+					},
+					{
+						"type": "button",
+						"html": "<a class=\"tablesome__button\" href=\"//aaa.com\" target=\"_blank\"><button type=\"submit\" class=\"button\">aaa.com</button></a>",
+						"value": "aaa.com",
+						"column_id": 4
+					}
+				],
+				"rank_order": "0|100000:",
+				"created_at": "2022-12-14 04:49:40",
+				"updated_at": "2022-12-17 08:00:22"
+			}
+		]
+	}
+}

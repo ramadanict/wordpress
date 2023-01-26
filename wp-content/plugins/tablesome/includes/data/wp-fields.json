@@ -1,0 +1,42 @@
+{
+	"post": [
+		{
+			"id": "post_title",
+			"label": "Post Title"
+		},
+		{
+			"id": "post_status",
+			"label": "Post Status"
+		},
+		{
+			"id": "post_content",
+			"label": "Post Content"
+		},
+		{
+			"id": "post_excerpt",
+			"label": "Post Excerpt"
+		},
+		{
+			"id": "post_author",
+			"label": "Post Author"
+		},
+		{
+			"id": "taxonomies",
+			"label": "Taxonomy"
+		},
+		{
+			"id": "postmeta",
+			"label": "Post Meta"
+		}
+	],
+	"post_categories": [
+		{
+			"id": "shoes",
+			"label": "Shoes"
+		},
+		{
+			"id": "bags",
+			"label": "Bags"
+		}
+	]
+}

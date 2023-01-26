@@ -1,0 +1,267 @@
+msgid "S.No"
+msgstr "S.No" 
+
+#. Pagination
+msgid "First"
+msgstr "First" 
+
+msgid "Previous"
+msgstr "Previous" 
+
+msgid "Next"
+msgstr "Next" 
+
+msgid "Last"
+msgstr "Last"
+
+#. Column Options
+msgid "Sort Ascending"
+msgstr "Sort Ascending"
+
+msgid "Sort Descending"
+msgstr "Sort Descending"
+
+msgid "Insert left"
+msgstr "Insert left"
+
+msgid "Insert Right"
+msgstr "Insert Right"
+
+msgid "Duplicate"
+msgstr "Duplicate"
+
+msgid "Delete"
+msgstr "Delete"
+
+#. Column Format Types
+msgid "Format Type"
+msgstr "Format Type"
+
+msgid "Basic"
+msgstr "Basic"
+
+msgid "Text"
+msgstr "Text"
+
+msgid "Text Area"
+msgstr "Text Area"
+
+msgid "Number"
+msgstr "Number"
+
+msgid "Image"
+msgstr "Image"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Email"
+msgstr "Email"
+
+#. Search
+msgid "Type to Search ..."
+msgstr "Type to Search ..."
+
+#. Filter
+msgid "FILTER"
+msgstr "FILTER"
+
+msgid "Add a Filter"
+msgstr "Add a Filter"
+
+msgid "Type to filter ..."
+msgstr "Type to filter ..."
+
+#. Notices or Messages
+msgid "Are you sure want's to Delete the selected Row?"
+msgstr "Are you sure want's to Delete the selected Row?"
+
+msgid "Are you sure want's to Delete the selected Column?"
+msgstr "Are you sure want's to Delete the selected Column?"
+
+msgid "Couldn't remove the row. The table must have one row at least!"
+msgstr "Couldn't remove the row. The table must have one row at least!"
+
+msgid "Couldn't remove the Column. The table must have one Column at least!"
+msgstr "Couldn't remove the Column. The table must have one Column at least!"
+
+msgid "Unable to create a post."
+msgstr "Unable to create a post."
+
+
+#. Table Defaults like placeholder and title.
+msgid "Column name"
+msgstr "Column name"
+
+msgid "FILTER"
+msgstr "FILTER"
+
+msgid "Importing the Data"
+msgstr "Importing the Data"
+
+msgid "Title"
+msgstr "Title"
+
+msgid "File"
+msgstr "File"
+
+msgid "Take the first row as the column header of the table"
+msgstr "Take the first row as the column header of the table"
+
+msgid "Load Data"
+msgstr "Load Data"
+
+msgid "Notes"
+msgstr "Notes"
+
+msgid "As of now, it would load only up to 10,000 records. We are working to load more records and will be added soon."
+msgstr "As of now, it would load only up to 10,000 records. We are working to load more records and will be added soon."
+
+msgid "As of now, it supports only XLSX and CSV format."
+msgstr "As of now, it supports only XLSX and CSV format."
+
+#. CPT Page.
+
+msgid "Create New Table"
+msgstr "Create New Table"
+
+msgid "Add New"
+msgstr "Add New"
+
+msgid "Table Name"
+msgstr "Table Name"
+
+msgid "Column name..."
+msgstr "Column name..."
+
+msgid "Edit Table"
+msgstr "Edit Table"
+
+msgid "Save Table"
+msgstr "Save Table"
+
+msgid "Update Table"
+msgstr "Update Table"
+
+msgid "Import"
+msgstr "Import"
+
+msgid "Import Table"
+msgstr "Import Table"
+
+msgid "Copy Shortcode Clipboard"
+msgstr "Copy Shortcode Clipboard"
+
+msgid "Copy Shortcode"
+msgstr "Copy Shortcode"
+
+msgid "Copy and paste this shortcode in any page or post to display this Table"
+msgstr "Copy and paste this shortcode in any page or post to display this Table"
+
+#. Shortcode
+msgid "Shortcode"
+msgstr "Shortcode"
+
+msgid "Shortcode Copied!"
+msgstr "Shortcode Copied!"
+
+msgid "Add Tablesome Shortcode"
+msgstr "Add Tablesome Shortcode"
+
+msgid "Enter the Tablesome Table ID"
+msgstr "Enter the Tablesome Table ID"
+
+msgid "Please enter the tablesome table id"
+msgstr "Please enter the tablesome table id"
+
+msgid "Exclude Columns"
+msgstr "Exclude Columns"
+
+msgid "Select an table exclude columns"
+msgstr "Select an table exclude columns"
+
+#. Settings -- General Section
+msgid "Tablesome Settings"
+msgstr "Tablesome Settings"
+
+msgid "Table Settings"
+msgstr "Table Settings"
+
+msgid "General"
+msgstr "General"
+
+msgid "Number Of Records per Page"
+msgstr "Number Of Records per Page"
+
+msgid "Value should between 1-100"
+msgstr "Value should between 1-100"
+
+msgid "Value should be 100 or below"
+msgstr "Value should be 100 or below"
+
+msgid "Value should be 1 at least"
+msgstr "Value should be 1 at least"
+
+msgid "Search"
+msgstr "Search"
+
+msgid "This will affect the front end only"
+msgstr "This will affect the front end only"
+
+msgid "Sorting"
+msgstr "Sorting"
+
+msgid "Filters"
+msgstr "Filters"
+
+msgid "Layout Options"
+msgstr "Layout Options"
+
+msgid "Min Column Width"
+msgstr "Min Column Width"
+
+msgid "Mobile Layout"
+msgstr "Mobile Layout"
+
+#. Settings -- Style Section
+
+msgid "Style"
+msgstr "Style"
+
+msgid "Disable Style"
+msgstr "Disable Style"
+
+msgid "load default table styles from theme"
+msgstr "load default table styles from theme"
+
+msgid "Table Header Styles"
+msgstr "Table Header Styles"
+
+msgid "Header Border Width and Color"
+msgstr "Header Border Width and Color"
+
+msgid "Header background"
+msgstr "Header background"
+
+msgid "Header Typography"
+msgstr "Header Typography"
+
+msgid "Table Row and Cell Styles"
+msgstr "Table Row and Cell Styles"
+
+msgid "Row background"
+msgstr "Row background"
+
+msgid "Row background for alternate rows"
+msgstr "Row background for alternate rows"
+
+msgid "Cell Border Width and Color"
+msgstr "Cell Border Width and Color"
+
+msgid "Cell Typography"
+msgstr "Cell Typography"
+
+msgid "Import"
+msgstr "Import"
+
+#'.__("", "tablesome").'
